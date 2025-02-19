@@ -1,0 +1,21 @@
+# Configuration file for OSM life cycle
+# !DO NOT REMOVE keys, just assign 'null' if needed
+
+## ohsome API parameters
+start_year: 2010 # it is recommended to not use out a timestamp before 2010 as data might be absent
+bbox_1_name: "UK"
+bbox_2_name: "Catalonia"
+bbox_3_name: null
+
+# input GeoTIFF dataset with a placeholder of the year (define bounding boxes)
+lulc: ['lulc_esa_{year}.tif','lulc_bbox_{year}.tif'] # we use just bounding box if data are not available by licence 
+
+# yearstamp of raster dataset
+year: [2017,2022] # year: [2012,2017,2022] all timestamps 
+
+# paths to directories
+input_dir: 'data/input'
+lulc_dir: 'data/input/lulc'
+vector_dir: 'data/input/vector'
+impedance_dir: 'data/input/impedance'
+output_dir: 'data/output'
